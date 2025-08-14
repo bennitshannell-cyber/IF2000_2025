@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "IF2000_IntroduccionProgra",
+            "request": "launch",
+            "mainClass": "IF2000_IntroduccionProgra.IF2000_IntroduccionProgra",
+            "projectName": "IF2000_2025_101a4cd0"
+        },
+        {
+            "command": "zsh",
+            "name": "npm",
+            "request": "launch",
+            "type": "node-terminal"
+        }
+    ]
+}
