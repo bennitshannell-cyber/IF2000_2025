@@ -1,7 +1,7 @@
 package IF2000_IntroduccionProgra;
 
 public class IF2000_IntroduccionProgra {
-    
+
     public static void main(String[] args) {
         
         String name = "Lionel";
@@ -37,3 +37,4 @@ public class IF2000_IntroduccionProgra {
          */
     }
 }
+
