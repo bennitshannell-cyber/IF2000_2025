@@ -3,7 +3,6 @@ package Domain;
 public class Persona {
 
 //Atributes
-public class Person {
  private String name;
  private String lastname;
  private String id;
@@ -11,14 +10,14 @@ public class Person {
  private int age;
 
     //Constructor
-    public Person(String name, String lastname, String id, String phone, int age) {
+    public Persona (String name, String lastname, String id, String phone, int age) {
         this.name = name;
         this.lastname = lastname;
         this.id = id;
         this.phone = phone;
         this.age = age;
     }
-    public Person() {
+    public Persona () {
         this.name = "";
         this.lastname = "";
         this.id = "";
@@ -71,7 +70,7 @@ public class Person {
     
     @Override
     public String toString() {
-        return "Person{" 
+        return "Persona{" 
         + "name=" + name + getName()
         + ", lastname=" + lastname + getLastname()
         + ", id=" + id + getId()
@@ -80,4 +79,4 @@ public class Person {
     }
 
 }
-}
+
