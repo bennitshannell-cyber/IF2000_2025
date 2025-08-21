@@ -20,5 +20,18 @@ public class Ejercicios_Semana2_PracticaEnClase {
             System.out.println();
         }
     }
+    public void ejercicio_A(int n) {
+       for (int i = 1; i <= n; i++) {          
+        for (int j = 1; j <= n; j++) {       
+            if (i == 1 || i == n || j == 1 || j == n) {
+                // Si estamos en los bordes del cuadrado
+                System.out.print("*");
+            } else {
+                // Si estamos dentro del cuadrado
+                System.out.print(" ");
+            }
+        }
+        System.out.println();                
+    }
 }
-
+}
