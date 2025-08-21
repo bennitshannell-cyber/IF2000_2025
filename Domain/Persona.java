@@ -69,11 +69,11 @@ public class Persona {
     @Override
     public String toString() {
         return "Persona{" +
-                "name='" + name + '\'' +
-                ", lastname='" + lastname + '\'' +
-                ", id='" + id + '\'' +
-                ", phone='" + phone + '\'' +
-                ", age=" + age +
+                "name = '" + name + '\'' +
+                ", lastname = '" + lastname + '\'' +
+                ", id = '" + id + '\'' +
+                ", phone = '" + phone + '\'' +
+                ", age = " + age +
                 '}';
     }
 }
