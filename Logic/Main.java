@@ -3,11 +3,12 @@ package Logic;
 import java.util.Scanner;
 
 import Domain.Persona;
+import Domain.SavingAccount;
 
 
 public class Main {
     public static void main(String[] args) {
-        Ejercicios_Semana2_PracticaEnClase eje = new Ejercicios_Semana2_PracticaEnClase();
+       /* Ejercicios_Semana2_PracticaEnClase eje = new Ejercicios_Semana2_PracticaEnClase();
         //Quiz 2//
         eje.quiz2_A_primos();
         eje.quiz2_B_piramide(5);
@@ -51,7 +52,18 @@ public class Main {
         // Ejercicio_F
         System.out.println("F) Tablero de Damas\n");
         eje.ejercicioF();
-        sc.close();
+        sc.close();*/
+
+        //Prueba clase Persona cliente
+        Persona persona = new Persona("Edgardo", "Corrales", "1-2345-6789", "45456789", 18);
+        System.out.print(persona.toString());
+
+        //Prueba clase SavingAccount
+        SavingAccount savingAccount = new SavingAccount("1000567801", 25000.00, persona, "2025-09-04", 12, 0.05f);
+
+        //Simulation of deposit
+        savingAccount.deposit(3000.00);
+        System.out.print(savingAccount.toString());
 
     }
 }

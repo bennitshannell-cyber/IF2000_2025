@@ -49,17 +49,22 @@ package Domain;
     }
 
     public void withdraw(double amount) {
-        this.balance -= amount;
+      
     }
+
+    public abstract void deposit ();
+    public abstract void withdraw ();
     public abstract double interestCalculation();
 
 
     @Override
     public String toString() {
-        String result = "/nBANK ACCOUNT INFORMATION/n" +
-                "Account Number: " + this.getAccountNumber() + "/n" +
-                "Balance: " + this.getBalance() + "/n" +
-                "Account Owner: " + this.getClient().toString() + "/n";
+        String result = "/nBANK ACCOUNT INFORMATION/:" 
+                + "/n" 
+                + "/n" + "Account Number: " + this.getAccountNumber() 
+                + "/n" + "Balance: " + this.getBalance() 
+                + "/n" + "Account Owner: " + this.getClient().toString() 
+                + "/n";
         return result;
     }
 }
