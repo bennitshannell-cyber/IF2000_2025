@@ -8,7 +8,7 @@ import Domain.SavingAccount;
 
 public class Main {
     public static void main(String[] args) {
-       /* Ejercicios_Semana2_PracticaEnClase eje = new Ejercicios_Semana2_PracticaEnClase();
+        Ejercicios_Semana2_PracticaEnClase eje = new Ejercicios_Semana2_PracticaEnClase();
         //Quiz 2//
         eje.quiz2_A_primos();
         eje.quiz2_B_piramide(5);
@@ -52,7 +52,7 @@ public class Main {
         // Ejercicio_F
         System.out.println("F) Tablero de Damas\n");
         eje.ejercicioF();
-        sc.close();*/
+        sc.close();
 
         //Prueba clase Persona cliente
         Persona persona = new Persona("Edgardo", "Corrales", "1-2345-6789", "45456789", 18);
