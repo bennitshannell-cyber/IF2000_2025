@@ -75,7 +75,6 @@ class Bank{
     }
 
     public AccountSinpe researchAccount(String accountNumber) {
-        AccountSinpe account = getAccount(accountNumber);
         for(AccountSinpe acc : accounts) {
             if (acc.getAccountNumber().equals(accountNumber)) {
                 return acc;
@@ -98,9 +97,7 @@ class SinpeSystem {
     // Transferencia entre bancos
     public void transferir(String accountOrigen, String accountDestino, double monto) {
         AccountSinpe origen = null, destino = null;
-        Bank bankOrigen= null, bankDestino = null;
-
-    // Buscar las cuentas y bancos correspondientes
+        // Buscar las cuentas y bancos correspondientes
         for (Bank banco : banks) {
             AccountSinpe cuenta = banco.getAccount(accountOrigen);
             if (cuenta != null) {
@@ -109,7 +106,6 @@ class SinpeSystem {
             cuenta = banco.getAccount(accountDestino);
             if (cuenta != null) {
                 destino = cuenta;
-                bankDestino = banco;
             }
         }
 
