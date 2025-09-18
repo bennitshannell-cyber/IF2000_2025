@@ -1,8 +1,8 @@
 package Laboratorio_3_POO_Banco.Presentation;
 
 public class SavingsAccount extends Account {
-    private String startDate;   // example: "2025-09-01"
-    private int monthsTerm;     // number of months in fixed term
+    private String startDate;   
+    private int monthsTerm;     
     private double interestRate; // Example: 0.05 = 5% yearly
 
     // Constructor
