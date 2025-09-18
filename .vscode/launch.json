@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MainBank_2",
+            "request": "launch",
+            "mainClass": "Laboratorio_3_POO_Banco.Logic.MainBank_2",
+            "projectName": "IF2000_2025_e713a54e"
+        },
+        {
+            "type": "java",
             "name": "mainLab_1",
             "request": "launch",
             "mainClass": "Logic.mainLab_1",

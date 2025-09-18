@@ -1,8 +1,5 @@
 package Laboratorio_3_POO_Banco.Logic;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class AccountSinpe {
     private String accountNumber;
     private String ClientID;
@@ -46,83 +43,4 @@ public class AccountSinpe {
                 '}';
     }
 
-}
-
-class Bank{
-    private String name;
-    private List<AccountSinpe> accounts;
-
-    public Bank(String name) {
-        this.name = name;
-        this.accounts = new ArrayList<>();
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void addAccount(AccountSinpe account) {
-        accounts.add(account);
-    }
-
-    public AccountSinpe getAccount(String accountNumber) {
-        for (AccountSinpe account : accounts) {
-            if (account.getAccountNumber().equals(accountNumber)) {
-                return account;
-            }
-        }
-        return null;
-    }
-
-    public AccountSinpe researchAccount(String accountNumber) {
-        for(AccountSinpe acc : accounts) {
-            if (acc.getAccountNumber().equals(accountNumber)) {
-                return acc;
-            }
-        }
-        return null;
-    }
-}
-
-class SinpeSystem {
-    private List<Bank> banks;
-
-    public SinpeSystem() {
-        this.banks = new ArrayList<>();
-    }
-
-    public void registerBank(Bank bank) {
-        banks.add(bank);
-    }
-    // Transferencia entre bancos
-    public void transferir(String accountOrigen, String accountDestino, double monto) {
-        AccountSinpe origen = null, destino = null;
-        // Buscar las cuentas y bancos correspondientes
-        for (Bank banco : banks) {
-            AccountSinpe cuenta = banco.getAccount(accountOrigen);
-            if (cuenta != null) {
-                origen = cuenta;
-            }
-            cuenta = banco.getAccount(accountDestino);
-            if (cuenta != null) {
-                destino = cuenta;
-            }
-        }
-
-        if (origen == null) {
-            System.out.println("Cuenta de origen no encontrada: " + accountOrigen);
-            return;
-        }
-        if (destino == null) {
-            System.out.println("Cuenta de destino no encontrada: " + accountDestino);
-            return;
-        }
-        if (origen.withdraw(monto)) {
-            destino.deposit(monto);
-            System.out.println("Transferencia exitosa de " + monto + " de " + accountOrigen + " a " + accountDestino);
-        } else {
-            System.out.println("Fondos insuficientes en la cuenta de origen: " + accountOrigen);
-        }
-    }
-            
 }
