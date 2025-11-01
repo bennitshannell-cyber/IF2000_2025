@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MainRegistro",
+            "request": "launch",
+            "mainClass": "Registro.MainRegistro",
+            "projectName": "IF2000_2025_e713a54e"
+        },
+        {
+            "type": "java",
             "name": "MainLab_4",
             "request": "launch",
             "mainClass": "Logic.MainLab_4",
